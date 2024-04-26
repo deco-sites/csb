@@ -139,6 +139,9 @@ export default function TableIsland() {
           ))}
         </tbody>
       </table>
+      <button className="bg-[#97DAC1] m-4 rounded-lg px-16 py-3 font-semibold hover:bg-[#6CF2C0]">
+        Enviar
+      </button>
     </div>
   );
 }

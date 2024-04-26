@@ -41,53 +41,76 @@ export default function BannerGrid({
   ],
 }: Props) {
   return (
-    <div className="bg-[#04132C] text-white h-full min-h-screen w-full flex flex-col items-center gap-4 justify-center p-4 text-center">
-      <img src="/image/logo-csb.png" alt="Csb Logo" />
-      {
-        /*<Image
+    <div className="bg-[#04132C]">
+      <img
+        className="flex absolute z-0 top-0 right-0"
+        src="/image/bg-circles1.png"
+        alt="background"
+      />
+      <img
+        className="flex absolute z-0 bottom-0 left-0"
+        src="/image/bg-circles2.png"
+        alt="background"
+      />
+      <div className=" relative  text-white h-full min-h-screen w-full flex flex-col items-center gap-4 justify-center p-4 text-center">
+        <img src="/image/logo-csb.png" alt="Csb Logo" />
+
+        {
+          /*<Image
         src="/image/logo-csb.png"
         width={100}
         preload
         loading="eager"
         fetchPriority="high"
       />*/
-      }
-      <span>Prezado(a) (NOME DO PROFESSOR),</span>
-      <span>
-        Seja bem-vindo(a) à inscrição da turma 2024B da escola Alda Bernardo no
-        projeto Circuito STEAM São Bernardo do Campo!
-      </span>
-      <span>
-        Estamos animados em tê-los conosco nessa jornada de descobertas. Para
-        garantir que sua turma receba um dos temas mais alinhados com seus
-        interesses, pedimos que informe a ordem de preferência dos temas
-        disponíveis.
-      </span>
-      <span>
-        Classifique os temas de 1 a 6, sendo 1 o de maior interesse e 6 o de
-        menor:
-      </span>
+        }
+        <span>
+          Prezado(a){" "}
+          <strong className="text-[#97DAC1] font-semibold">Rodrigo</strong>,
+        </span>
+        <span>
+          Seja bem-vindo(a) à inscrição da turma{" "}
+          <strong className="text-[#97DAC1] font-semibold text-lg">
+            2024B
+          </strong>{" "}
+          da escola{" "}
+          <strong className="text-[#97DAC1] font-semibold text-lg">
+            Alda Bernardo
+          </strong>{" "}
+          no projeto Circuito STEAM São Bernardo do Campo!
+        </span>
+        <span>
+          Estamos animados em tê-los conosco nessa jornada de descobertas. Para
+          garantir que sua turma receba um dos temas mais alinhados com seus
+          interesses, pedimos que informe a ordem de preferência dos temas
+          disponíveis.
+        </span>
+        <span>
+          Classifique os temas de 1 a 6, sendo 1 o de maior interesse e 6 o de
+          menor:
+        </span>
 
-      <TableIsland />
+        <TableIsland />
 
-      <span>
-        A disponibilidade dos temas é limitada, com cerca de 1000 kits cada.
-        Caso o tema de maior preferência tenha uma procura maior que a
-        quantidade disponível, faremos o possível para atribuir um dos temas
-        seguintes na ordem indicada.
-      </span>
-      <span>
-        Ao preencher este formulário, você dá um passo importante para garantir
-        uma experiência enriquecedora e emocionante para sua turma no universo
-        STEAM. Estamos ansiosos para embarcar nessa aventura e ver o brilho nos
-        olhos de cada estudante ao explorar o tema escolhido.
-      </span>
-      <span>
-        Vamos juntos construir um futuro mais criativo, inovador e inspirador!
-      </span>
-      <span className="text-[#4F94D9] font-semibold">
-        Equipe Circuito STEAM Brasil
-      </span>
+        <span>
+          A disponibilidade dos temas é limitada, com cerca de 1000 kits cada.
+          Caso o tema de maior preferência tenha uma procura maior que a
+          quantidade disponível, faremos o possível para atribuir um dos temas
+          seguintes na ordem indicada.
+        </span>
+        <span>
+          Ao preencher este formulário, você dá um passo importante para
+          garantir uma experiência enriquecedora e emocionante para sua turma no
+          universo STEAM. Estamos ansiosos para embarcar nessa aventura e ver o
+          brilho nos olhos de cada estudante ao explorar o tema escolhido.
+        </span>
+        <span>
+          Vamos juntos construir um futuro mais criativo, inovador e inspirador!
+        </span>
+        <span className="text-[#4F94D9] font-semibold text-xl">
+          Equipe Circuito STEAM Brasil
+        </span>
+      </div>
     </div>
   );
 }
