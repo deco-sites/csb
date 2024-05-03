@@ -2084,7 +2084,35 @@
         "param": "slug",
         "__resolveType": "website/functions/requestToParam.ts"
       },
-      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts"
+      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList"
+      },
+      "product": {
+        "@type": "Product",
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": []
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": []
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      }
     },
     "extensions": [
       {
@@ -2672,7 +2700,8 @@
       {
         "url": "/linktree",
         "name": "Link Tree",
-        "@type": "SiteNavigationElement"
+        "@type": "SiteNavigationElement",
+        "children": []
       }
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
@@ -2685,7 +2714,7 @@
       }
     ],
     "__resolveType": "website/pages/Page.tsx",
-    "path": "/:jwt"
+    "path": "/"
   },
   "vtex-trigger": {
     "product": [
@@ -2736,9 +2765,29 @@
     }
   },
   "site": {
-    "__resolveType": "site/apps/site.ts"
+    "__resolveType": "site/apps/site.ts",
+    "seo": {
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s",
+      "type": "website"
+    }
   },
   "decohub": {
     "__resolveType": "site/apps/decohub.ts"
+  },
+  "My Block": {
+    "__resolveType": "site/loaders/availableIcons.ts"
+  },
+  "Preview commerce/loaders/extensions/productDetailsPage.ts": {
+    "__resolveType": "commerce/loaders/extensions/productDetailsPage.ts"
+  },
+  "Preview /sections/Product/ProductDetails.tsx": {
+    "__resolveType": "site/sections/Product/ProductDetails.tsx"
+  },
+  "analytics": {
+    "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "vtex": {
+    "__resolveType": "decohub/apps/vtex.ts"
   }
 }
