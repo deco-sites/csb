@@ -2778,5 +2778,11 @@
   },
   "vtex": {
     "__resolveType": "decohub/apps/vtex.ts"
+  },
+  "decohub": {
+    "__resolveType": "site/apps/decohub.ts"
+  },
+  "site": {
+    "__resolveType": "site/apps/site.ts"
   }
 }
