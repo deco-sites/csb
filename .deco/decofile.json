@@ -40,7 +40,11 @@
   "pages-Home-206990": {
     "name": "Home",
     "path": "/",
-    "sections": [],
+    "sections": [
+      {
+        "__resolveType": "site/sections/Images/BannerGrid.tsx"
+      }
+    ],
     "__resolveType": "website/pages/Page.tsx"
   }
 }
