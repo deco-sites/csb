@@ -3129,7 +3129,7 @@
       }
     ],
     "__resolveType": "website/pages/Page.tsx",
-    "path": "/"
+    "path": "/*"
   },
   "pages-offline-b9c52de8c7b3": {
     "name": "Offline",
