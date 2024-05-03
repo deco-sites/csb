@@ -55,17 +55,9 @@ export default function BannerGrid({
       <div className=" relative  text-white h-full min-h-screen w-full flex flex-col items-center gap-4 justify-center p-4 text-center">
         <img src="/image/logo-csb.png" alt="Csb Logo" />
 
-        {
-          /*<Image
-        src="/image/logo-csb.png"
-        width={100}
-        preload
-        loading="eager"
-        fetchPriority="high"
-      />*/
-        }
+    
         <span>
-          Prezado(a){" "}
+          Prezados(as){" "}
           <strong className="text-[#97DAC1] font-semibold">Rodrigo</strong>,
         </span>
         <span>
