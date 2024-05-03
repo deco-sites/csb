@@ -2734,5 +2734,11 @@
     "default": {
       "possiblePaths": []
     }
+  },
+  "site": {
+    "__resolveType": "site/apps/site.ts"
+  },
+  "decohub": {
+    "__resolveType": "site/apps/decohub.ts"
   }
 }
