@@ -3,6 +3,6 @@
     "name": "Home",
     "path": "/",
     "sections": [],
-    "__resolveType": "website/pages/Page.tsx"
+    "__resolveType": "website/sections/Landing/landing.tsx"
   }
 }
