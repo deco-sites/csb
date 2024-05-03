@@ -2565,16 +2565,6 @@
   "Workflows": {
     "__resolveType": "decohub/apps/workflows.ts"
   },
-  "algolia": {
-    "adminApiKey": {
-      "name": "ALGOLIA_ADMIN_API_KEY",
-      "encrypted": "6907fce3daa50f6821fd81da0cf4a3fc0f29f589a2b2f1d97f30bf2169250560eee6dc8e83c730202df34d29accee12f",
-      "__resolveType": "website/loaders/secret.ts"
-    },
-    "searchApiKey": "c1db0c388028afd574750a0f3abc911d",
-    "__resolveType": "decohub/apps/algolia.ts",
-    "applicationId": "3MINZHT36Y"
-  },
   "files": {
     "__resolveType": "decohub/apps/files.ts"
   },
@@ -2707,67 +2697,7 @@
       }
     ],
     "__resolveType": "website/pages/Page.tsx",
-    "path": "/*"
-  },
-  "plausible": {
-    "__resolveType": "decohub/apps/analytics.ts"
-  },
-  "site": {
-    "seo": {
-      "type": "website",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Storefront",
-      "jsonLDs": [],
-      "noIndexing": false,
-      "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "%s | deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    "theme": {
-      "__resolveType": "Fashion theme"
-    },
-    "global": [
-      {
-        "__resolveType": "website/sections/Analytics/Analytics.tsx",
-        "dangerouslyRunOnMainThread": true
-      },
-      {
-        "__resolveType": "algolia/sections/Analytics/Algolia.tsx"
-      },
-      {
-        "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
-      }
-    ],
-    "routes": [
-      {
-        "__resolveType": "vtex/loaders/proxy.ts",
-        "includeSiteMap": [],
-        "extraPathsToProxy": [],
-        "includeScriptsToHead": {
-          "includes": [
-            {
-              "__resolveType": "analytics/loaders/DecoAnalyticsScript.ts"
-            }
-          ],
-          "includePlausible": true
-        }
-      },
-      {
-        "__resolveType": "website/loaders/pages.ts"
-      },
-      {
-        "__resolveType": "website/loaders/redirects.ts"
-      }
-    ],
-    "caching": {
-      "directives": []
-    },
-    "commerce": {
-      "platform": "other"
-    },
-    "platform": "vtex",
-    "__resolveType": "site/apps/site.ts",
-    "firstByteThresholdMS": true
+    "path": "/:jwt"
   },
   "vtex-trigger": {
     "product": [
@@ -2777,17 +2707,50 @@
     ],
     "__resolveType": "vtex/workflows/events.ts"
   },
-  "vtex": {
-    "account": "bravtexfashionstore",
-    "platform": "vtex",
-    "publicUrl": "fashion.bravtexstores.com.br",
-    "salesChannel": "1",
-    "__resolveType": "decohub/apps/vtex.ts",
-    "defaultSegment": {
-      "channelPrivacy": "public"
-    }
-  },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
+  },
+  "pages-My%20New%20Page-767005": {
+    "name": "Category",
+    "path": "/*",
+    "sections": [
+      {
+        "jsonLD": {
+          "__resolveType": "PLP Loader"
+        },
+        "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+      },
+      {
+        "__resolveType": "Header - 01"
+      },
+      {
+        "page": {
+          "__resolveType": "PLP Loader"
+        },
+        "layout": {
+          "columns": {
+            "mobile": 2,
+            "desktop": 4
+          },
+          "variant": "aside",
+          "pagination": "show-more"
+        },
+        "cardLayout": {
+          "__resolveType": "Product Card Layout - 01"
+        },
+        "startingPage": 1,
+        "__resolveType": "deco-sites/diego/sections/Product/SearchResult.tsx"
+      },
+      {
+        "__resolveType": "Footer - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx",
+    "default": {
+      "possiblePaths": []
+    }
+  },
+  "site": {
+    "__resolveType": "site/apps/site.ts"
   }
 }
