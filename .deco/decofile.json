@@ -2764,17 +2764,6 @@
       "possiblePaths": []
     }
   },
-  "site": {
-    "__resolveType": "site/apps/site.ts",
-    "seo": {
-      "titleTemplate": "%s",
-      "descriptionTemplate": "%s",
-      "type": "website"
-    }
-  },
-  "decohub": {
-    "__resolveType": "site/apps/decohub.ts"
-  },
   "My Block": {
     "__resolveType": "site/loaders/availableIcons.ts"
   },
