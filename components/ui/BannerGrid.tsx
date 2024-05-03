@@ -55,7 +55,6 @@ export default function BannerGrid({
       <div className=" relative  text-white h-full min-h-screen w-full flex flex-col items-center gap-4 justify-center p-4 text-center">
         <img src="/image/logo-csb.png" alt="Csb Logo" />
 
-    
         <span>
           Prezados(as){" "}
           <strong className="text-[#97DAC1] font-semibold">Rodrigo</strong>,
