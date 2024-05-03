@@ -1,1 +1,8 @@
-{}
+{
+  "pages-Home-419287": {
+    "name": "Home",
+    "path": "/",
+    "sections": [],
+    "__resolveType": "website/pages/Page.tsx"
+  }
+}
