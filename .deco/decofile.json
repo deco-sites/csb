@@ -2784,5 +2784,23 @@
   },
   "site": {
     "__resolveType": "site/apps/site.ts"
+  },
+  "vnda": {
+    "__resolveType": "decohub/apps/vnda.ts"
+  },
+  "brand-assistant": {
+    "__resolveType": "decohub/apps/brand-assistant.ts"
+  },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
+  },
+  "workflows": {
+    "__resolveType": "decohub/apps/workflows.ts"
+  },
+  "weather": {
+    "__resolveType": "decohub/apps/weather.ts"
+  },
+  "ai-assistants": {
+    "__resolveType": "decohub/apps/ai-assistants.ts"
   }
 }
