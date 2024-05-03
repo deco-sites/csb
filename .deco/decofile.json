@@ -4,5 +4,37 @@
     "path": "/",
     "sections": [],
     "__resolveType": "website/sections/Landing/landing.tsx"
+  },
+  "decohub": {
+    "__resolveType": "site/apps/decohub.ts"
+  },
+  "site": {
+    "__resolveType": "site/apps/site.ts",
+    "seo": {
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s",
+      "type": "website"
+    }
+  },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
+  },
+  "workflows": {
+    "__resolveType": "decohub/apps/workflows.ts"
+  },
+  "analytics": {
+    "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "vtex": {
+    "__resolveType": "decohub/apps/vtex.ts"
+  },
+  "brand-assistant": {
+    "__resolveType": "decohub/apps/brand-assistant.ts"
+  },
+  "weather": {
+    "__resolveType": "decohub/apps/weather.ts"
+  },
+  "ai-assistants": {
+    "__resolveType": "decohub/apps/ai-assistants.ts"
   }
 }
