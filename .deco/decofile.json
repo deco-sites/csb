@@ -322,11 +322,6 @@
     },
     "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
   },
-  "Deco HUB": {
-    "apps": [],
-    "enableAdmin": false,
-    "__resolveType": "site/apps/decohub.ts"
-  },
   "Desktop": {
     "desktop": true,
     "__resolveType": "website/matchers/device.ts"
@@ -2562,15 +2557,8 @@
     ],
     "__resolveType": "site/sections/Content/Testimonials.tsx"
   },
-  "Workflows": {
-    "__resolveType": "decohub/apps/workflows.ts"
-  },
   "files": {
     "__resolveType": "decohub/apps/files.ts"
-  },
-  "implementation": {
-    "__resolveType": "decohub/apps/implementation.ts",
-    "expectedGoLive": "2023-11-30"
   },
   "navbar": {
     "items": [
@@ -2707,9 +2695,6 @@
     ],
     "__resolveType": "vtex/workflows/events.ts"
   },
-  "weather": {
-    "__resolveType": "decohub/apps/weather.ts"
-  },
   "pages-My%20New%20Page-767005": {
     "name": "Category",
     "path": "/*",
@@ -2749,8 +2734,5 @@
     "default": {
       "possiblePaths": []
     }
-  },
-  "site": {
-    "__resolveType": "site/apps/site.ts"
   }
 }
