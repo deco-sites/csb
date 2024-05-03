@@ -322,11 +322,6 @@
     },
     "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
   },
-  "Deco HUB": {
-    "apps": [],
-    "enableAdmin": false,
-    "__resolveType": "site/apps/decohub.ts"
-  },
   "Desktop": {
     "desktop": true,
     "__resolveType": "website/matchers/device.ts"
@@ -1975,6 +1970,9 @@
     "mobile": true,
     "__resolveType": "website/matchers/device.ts"
   },
+  "My Block": {
+    "__resolveType": "site/loaders/availableIcons.ts"
+  },
   "Newsletter - 01": {
     "form": {
       "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
@@ -2089,7 +2087,35 @@
         "param": "slug",
         "__resolveType": "website/functions/requestToParam.ts"
       },
-      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts"
+      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList"
+      },
+      "product": {
+        "@type": "Product",
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": []
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": []
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      }
     },
     "extensions": [
       {
@@ -2113,6 +2139,12 @@
       }
     ],
     "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+  },
+  "Preview /sections/Product/ProductDetails.tsx": {
+    "__resolveType": "site/sections/Product/ProductDetails.tsx"
+  },
+  "Preview commerce/loaders/extensions/productDetailsPage.ts": {
+    "__resolveType": "commerce/loaders/extensions/productDetailsPage.ts"
   },
   "Product Card Layout - 01": {
     "layout": {
@@ -2562,25 +2594,23 @@
     ],
     "__resolveType": "site/sections/Content/Testimonials.tsx"
   },
-  "Workflows": {
-    "__resolveType": "decohub/apps/workflows.ts"
+  "ai-assistants": {
+    "__resolveType": "decohub/apps/ai-assistants.ts"
   },
-  "algolia": {
-    "adminApiKey": {
-      "name": "ALGOLIA_ADMIN_API_KEY",
-      "encrypted": "6907fce3daa50f6821fd81da0cf4a3fc0f29f589a2b2f1d97f30bf2169250560eee6dc8e83c730202df34d29accee12f",
-      "__resolveType": "website/loaders/secret.ts"
-    },
-    "searchApiKey": "c1db0c388028afd574750a0f3abc911d",
-    "__resolveType": "decohub/apps/algolia.ts",
-    "applicationId": "3MINZHT36Y"
+  "analytics": {
+    "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
+  },
+  "brand-assistant": {
+    "__resolveType": "decohub/apps/brand-assistant.ts"
+  },
+  "decohub": {
+    "__resolveType": "site/apps/decohub.ts"
   },
   "files": {
     "__resolveType": "decohub/apps/files.ts"
-  },
-  "implementation": {
-    "__resolveType": "decohub/apps/implementation.ts",
-    "expectedGoLive": "2023-11-30"
   },
   "navbar": {
     "items": [
@@ -2694,399 +2724,15 @@
       {
         "url": "/linktree",
         "name": "Link Tree",
-        "@type": "SiteNavigationElement"
+        "@type": "SiteNavigationElement",
+        "children": []
       }
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
   },
-  "pages-aiassistant-c38e51d3049a": {
-    "name": "AI Assistant",
-    "path": "/ai-assistant-deco-test",
-    "sections": [
-      {
-        "noIndexing": false,
-        "__resolveType": "website/sections/Seo/Seo.tsx"
-      },
-      {
-        "__resolveType": "Header - 01"
-      },
-      {
-        "variants": [
-          {
-            "rule": {
-              "traffic": 0.5,
-              "__resolveType": "website/matchers/random.ts"
-            },
-            "value": {
-              "dots": false,
-              "arrows": true,
-              "images": [
-                {
-                  "alt": "Feminino",
-                  "action": {
-                    "href": "/feminino",
-                    "label": "Explore collection",
-                    "title": "VTEX Store",
-                    "subTitle": "You are in A/B test to 50% of users"
-                  },
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-                },
-                {
-                  "alt": "Masculino",
-                  "action": {
-                    "href": "/masculino",
-                    "label": "Explore collection",
-                    "title": "VTEX Store",
-                    "subTitle": "Visit our site and start building now:"
-                  },
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-                },
-                {
-                  "alt": "Vestidos",
-                  "action": {
-                    "href": "/feminino/roupas/vestidos",
-                    "label": "Explore collection",
-                    "title": "VTEX Store",
-                    "subTitle": "Visit our site and start building now:"
-                  },
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-                }
-              ],
-              "preload": true,
-              "__resolveType": "site/sections/Images/Carousel.tsx"
-            }
-          },
-          {
-            "rule": {
-              "__resolveType": "website/matchers/always.ts"
-            },
-            "value": {
-              "dots": false,
-              "arrows": true,
-              "images": [
-                {
-                  "alt": "Feminino",
-                  "action": {
-                    "href": "/feminino",
-                    "label": "Explore collection",
-                    "title": "VTEX Store",
-                    "subTitle": "Visit our site and start building now:"
-                  },
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-                },
-                {
-                  "alt": "Masculino",
-                  "action": {
-                    "href": "/masculino",
-                    "label": "Explore collection",
-                    "title": "VTEX Store",
-                    "subTitle": "Visit our site and start building now:"
-                  },
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-                },
-                {
-                  "alt": "Vestidos",
-                  "action": {
-                    "href": "/feminino/roupas/vestidos",
-                    "label": "Explore collection",
-                    "title": "VTEX Store",
-                    "subTitle": "Visit our site and start building now:"
-                  },
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
-                }
-              ],
-              "preload": true,
-              "__resolveType": "site/sections/Images/Carousel.tsx"
-            }
-          }
-        ],
-        "__resolveType": "website/flags/multivariate/section.ts"
-      },
-      {
-        "content": [
-          {
-            "label": "HOT SALE",
-            "repeat": 30
-          }
-        ],
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
-      },
-      {
-        "link": {
-          "href": "https://github.com/deco-cx",
-          "text": "Visit our GitHub"
-        },
-        "text": "<p>Design, develop and deliver complete experiences</p>",
-        "labels": {
-          "days": "days",
-          "hours": "hours",
-          "expired": " Expired!",
-          "minutes": "minutes",
-          "seconds": "seconds"
-        },
-        "layout": {
-          "textPosition": "After counter"
-        },
-        "expiresAt": "2024-03-15T17:23:00.000Z",
-        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
-      },
-      {
-        "content": [
-          {
-            "label": "HOT SALE",
-            "repeat": 30
-          }
-        ],
-        "__resolveType": "site/sections/Miscellaneous/Slide.tsx"
-      },
-      {
-        "layout": {
-          "showArrows": true
-        },
-        "products": {
-          "props": {
-            "sort": "price:desc",
-            "count": 6,
-            "collection": "139"
-          },
-          "crossSelling": "similars",
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-        },
-        "cardLayout": {
-          "layout": {
-            "hide": {
-              "allPrices": false,
-              "favoriteIcon": true,
-              "installments": false,
-              "productDescription": true
-            },
-            "basics": {
-              "oldPriceSize": "Normal",
-              "contentAlignment": "Left"
-            },
-            "onMouseOver": {
-              "card": "None",
-              "image": "Change image",
-              "showCta": true,
-              "showCardShadow": false,
-              "showSkuSelector": false,
-              "showFavoriteIcon": false
-            },
-            "elementsPositions": {
-              "skuSelector": "Bottom",
-              "favoriteIcon": "Top right"
-            }
-          },
-          "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-        },
-        "__resolveType": "site/sections/Product/ProductShelf.tsx"
-      },
-      {
-        "__resolveType": "Shoppable Banner - 01"
-      },
-      {
-        "list": [
-          {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/01c01ba9-ac16-4371-82ca-b93d17545f9c",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
-          },
-          {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/9b80d57d-64b0-4eef-a3cd-fa8daafaae9c",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
-          },
-          {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/ed4c0eb3-96ab-484f-b293-e91d196a5063",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
-          },
-          {
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9882ff7-3dbc-43e4-9813-5cec23c012cd",
-            "label": "Your Collection",
-            "buttonText": "Explore collection"
-          }
-        ],
-        "header": {
-          "title": "Explore Our Categories"
-        },
-        "layout": {
-          "categoryCard": {
-            "textPosition": "bottom",
-            "textAlignment": "left"
-          }
-        },
-        "__resolveType": "site/sections/Category/CategoryGrid.tsx"
-      },
-      {
-        "behavior": {
-          "type": "intersection",
-          "payload": "700px"
-        },
-        "sections": [
-          {
-            "image": {
-              "alt": "Collection Image",
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/165c770b-cbbc-48c0-81ad-c732d527c77c",
-              "href": "/feminino"
-            },
-            "section": {
-              "title": "Summer Vibes",
-              "layout": {
-                "showArrows": true,
-                "headerfontSize": "Normal",
-                "headerAlignment": "center",
-                "numberOfSliders": {
-                  "mobile": 1,
-                  "desktop": 1
-                }
-              },
-              "products": {
-                "props": {
-                  "sort": "price:desc",
-                  "count": 3,
-                  "query": "camisa"
-                },
-                "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-              },
-              "cardLayout": {
-                "layout": {
-                  "hide": {
-                    "allPrices": false,
-                    "favoriteIcon": true,
-                    "installments": true,
-                    "productDescription": true
-                  },
-                  "basics": {
-                    "oldPriceSize": "Normal",
-                    "contentAlignment": "Left"
-                  },
-                  "onMouseOver": {
-                    "card": "None",
-                    "image": "Change image",
-                    "showCta": true,
-                    "showCardShadow": false,
-                    "showSkuSelector": true,
-                    "showFavoriteIcon": false
-                  },
-                  "elementsPositions": {
-                    "skuSelector": "Bottom",
-                    "favoriteIcon": "Top right"
-                  }
-                },
-                "__resolveType": "site/loaders/Layouts/ProductCard.tsx"
-              },
-              "__resolveType": "site/sections/Product/ProductShelf.tsx"
-            },
-            "__resolveType": "site/sections/Product/ShelfWithImage.tsx"
-          },
-          {
-            "tabs": [
-              {
-                "title": "Woman",
-                "products": {
-                  "props": {
-                    "sort": "price:desc",
-                    "count": 8,
-                    "query": "vestido"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              },
-              {
-                "title": "Man",
-                "products": {
-                  "props": {
-                    "sort": "price:desc",
-                    "count": 8,
-                    "collection": "140"
-                  },
-                  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                }
-              }
-            ],
-            "title": "Best Sellers",
-            "layout": {
-              "headerfontSize": "Large",
-              "headerAlignment": "center"
-            },
-            "cardLayout": {
-              "__resolveType": "Product Card Layout - 01"
-            },
-            "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx"
-          }
-        ],
-        "__resolveType": "website/sections/Rendering/Deferred.tsx"
-      },
-      {
-        "posts": [
-          {
-            "alt": "Item of the Summer",
-            "date": "January 15, 2024",
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1",
-            "label": "Item of the Summer",
-            "author": "deco.cx",
-            "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-          },
-          {
-            "alt": "Item of the Summer",
-            "date": "January 15, 2024",
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/a3f329d8-795c-4c3b-8049-ede939d599ef",
-            "label": "Item of the Summer",
-            "author": "deco.cx",
-            "description": "Lorem ipsum dolor sit amet consectetur. Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-          },
-          {
-            "alt": "Item of the Summer",
-            "date": "January 15, 2024",
-            "href": "/",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/7e80b083-d1ff-480d-b3a3-b744b69402b1",
-            "label": "Item of the Summer",
-            "author": "deco.cx",
-            "description": "Lorem ipsum dolor sit amet consectetur.  Condimentum dolor ultrices commodo et. Blandit vel est sodales tincidunt aliquam tincidunt. "
-          }
-        ],
-        "title": "Blogposts",
-        "__resolveType": "site/sections/Content/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "Footer - 04"
-      },
-      {
-        "logo": {
-          "alt": "logo",
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/f8c6c448-57c5-40bc-b148-b1c82008dc3c"
-        },
-        "openChat": false,
-        "mainColors": {
-          "logo": "#0a3e3d",
-          "primary": "#f2f2f2",
-          "tertiary": "#000000",
-          "secondary": "#ffffff"
-        },
-        "__resolveType": "site/sections/Chat/Chat.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-category-7493d4326022": {
+  "pages-My%20New%20Page-767005": {
     "name": "Category",
     "path": "/*",
-    "default": {
-      "possiblePaths": []
-    },
     "sections": [
       {
         "jsonLD": {
@@ -3113,13 +2759,16 @@
           "__resolveType": "Product Card Layout - 01"
         },
         "startingPage": 1,
-        "__resolveType": "site/sections/Product/SearchResult.tsx"
+        "__resolveType": "deco-sites/diego/sections/Product/SearchResult.tsx"
       },
       {
         "__resolveType": "Footer - 01"
       }
     ],
-    "__resolveType": "website/pages/Page.tsx"
+    "__resolveType": "website/pages/Page.tsx",
+    "default": {
+      "possiblePaths": []
+    }
   },
   "pages-home-c4bcbfb771e9": {
     "name": "Home",
@@ -3131,170 +2780,11 @@
     "__resolveType": "website/pages/Page.tsx",
     "path": "/"
   },
-  "pages-offline-b9c52de8c7b3": {
-    "name": "Offline",
-    "path": "/offline",
-    "sections": [
-      {
-        "__resolveType": "Header - 01"
-      },
-      {
-        "title": "Oh no! You are offline!",
-        "products": {
-          "props": {
-            "ids": [],
-            "sort": "price:desc",
-            "count": 4,
-            "collection": "139"
-          },
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-        },
-        "cardLayout": {
-          "__resolveType": "Product Card Layout - 01"
-        },
-        "description": "Maybe take some time to explore",
-        "__resolveType": "site/sections/Product/ProductShelf.tsx"
-      },
-      {
-        "__resolveType": "Footer - 01"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-productpage-ce4850591828": {
-    "name": "Product Page",
-    "path": "/:slug/p",
-    "default": {
-      "possiblePaths": []
-    },
-    "sections": [
-      {
-        "jsonLD": {
-          "__resolveType": "PDP Loader"
-        },
-        "jsonLDs": [
-          {}
-        ],
-        "__resolveType": "commerce/sections/Seo/SeoPDP.tsx"
-      },
-      {
-        "__resolveType": "Header - 01"
-      },
-      {
-        "page": {
-          "__resolveType": "PDP Loader"
-        },
-        "__resolveType": "site/sections/Product/ProductDetails.tsx"
-      },
-      {
-        "title": "You may also like",
-        "products": {
-          "slug": {
-            "param": "slug",
-            "__resolveType": "website/functions/requestToParam.ts"
-          },
-          "crossSelling": "whosawalsosaw",
-          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
-        },
-        "__resolveType": "site/sections/Product/ProductShelf.tsx"
-      },
-      {
-        "__resolveType": "Footer - 01"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-search-2f446eadce44": {
-    "name": "Search",
-    "path": "/s",
-    "sections": [
-      {
-        "type": "website",
-        "__resolveType": "website/sections/Seo/Seo.tsx",
-        "titleTemplate": "%s | Deco.cx",
-        "descriptionTemplate": "%s | Deco.cx"
-      },
-      {
-        "__resolveType": "Header - 01"
-      },
-      {
-        "page": {
-          "__resolveType": "PLP Loader"
-        },
-        "layout": {
-          "columns": {
-            "mobile": 2,
-            "desktop": 4
-          },
-          "variant": "aside"
-        },
-        "__resolveType": "site/sections/Product/SearchResult.tsx"
-      },
-      {
-        "__resolveType": "Footer - 01"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "plausible": {
-    "__resolveType": "decohub/apps/analytics.ts"
-  },
   "site": {
-    "seo": {
-      "type": "website",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Storefront",
-      "jsonLDs": [],
-      "noIndexing": false,
-      "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "%s | deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    "theme": {
-      "__resolveType": "Fashion theme"
-    },
-    "global": [
-      {
-        "__resolveType": "website/sections/Analytics/Analytics.tsx",
-        "dangerouslyRunOnMainThread": true
-      },
-      {
-        "__resolveType": "algolia/sections/Analytics/Algolia.tsx"
-      },
-      {
-        "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
-      }
-    ],
-    "routes": [
-      {
-        "__resolveType": "vtex/loaders/proxy.ts",
-        "includeSiteMap": [],
-        "extraPathsToProxy": [],
-        "includeScriptsToHead": {
-          "includes": [
-            {
-              "__resolveType": "analytics/loaders/DecoAnalyticsScript.ts"
-            }
-          ],
-          "includePlausible": true
-        }
-      },
-      {
-        "__resolveType": "website/loaders/pages.ts"
-      },
-      {
-        "__resolveType": "website/loaders/redirects.ts"
-      }
-    ],
-    "caching": {
-      "directives": []
-    },
-    "commerce": {
-      "platform": "other"
-    },
-    "platform": "vtex",
-    "__resolveType": "site/apps/site.ts",
-    "firstByteThresholdMS": true
+    "__resolveType": "site/apps/site.ts"
+  },
+  "vnda": {
+    "__resolveType": "decohub/apps/vnda.ts"
   },
   "vtex-trigger": {
     "product": [
@@ -3305,16 +2795,12 @@
     "__resolveType": "vtex/workflows/events.ts"
   },
   "vtex": {
-    "account": "bravtexfashionstore",
-    "platform": "vtex",
-    "publicUrl": "fashion.bravtexstores.com.br",
-    "salesChannel": "1",
-    "__resolveType": "decohub/apps/vtex.ts",
-    "defaultSegment": {
-      "channelPrivacy": "public"
-    }
+    "__resolveType": "decohub/apps/vtex.ts"
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
+  },
+  "workflows": {
+    "__resolveType": "decohub/apps/workflows.ts"
   }
 }
