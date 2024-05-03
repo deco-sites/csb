@@ -1970,6 +1970,9 @@
     "mobile": true,
     "__resolveType": "website/matchers/device.ts"
   },
+  "My Block": {
+    "__resolveType": "site/loaders/availableIcons.ts"
+  },
   "Newsletter - 01": {
     "form": {
       "helpText": "<p>By subscribing you agree to with our <u>Privacy Policy</u>.</p>",
@@ -2136,6 +2139,12 @@
       }
     ],
     "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
+  },
+  "Preview /sections/Product/ProductDetails.tsx": {
+    "__resolveType": "site/sections/Product/ProductDetails.tsx"
+  },
+  "Preview commerce/loaders/extensions/productDetailsPage.ts": {
+    "__resolveType": "commerce/loaders/extensions/productDetailsPage.ts"
   },
   "Product Card Layout - 01": {
     "layout": {
@@ -2585,6 +2594,21 @@
     ],
     "__resolveType": "site/sections/Content/Testimonials.tsx"
   },
+  "ai-assistants": {
+    "__resolveType": "decohub/apps/ai-assistants.ts"
+  },
+  "analytics": {
+    "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
+  },
+  "brand-assistant": {
+    "__resolveType": "decohub/apps/brand-assistant.ts"
+  },
+  "decohub": {
+    "__resolveType": "site/apps/decohub.ts"
+  },
   "files": {
     "__resolveType": "decohub/apps/files.ts"
   },
@@ -2706,24 +2730,6 @@
     ],
     "__resolveType": "commerce/loaders/navbar.ts"
   },
-  "pages-home-c4bcbfb771e9": {
-    "name": "Home",
-    "sections": [
-      {
-        "__resolveType": "Banner Grid - 01"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "path": "/"
-  },
-  "vtex-trigger": {
-    "product": [
-      {
-        "__resolveType": "algolia/workflows/index/product.ts"
-      }
-    ],
-    "__resolveType": "vtex/workflows/events.ts"
-  },
   "pages-My%20New%20Page-767005": {
     "name": "Category",
     "path": "/*",
@@ -2764,23 +2770,15 @@
       "possiblePaths": []
     }
   },
-  "My Block": {
-    "__resolveType": "site/loaders/availableIcons.ts"
-  },
-  "Preview commerce/loaders/extensions/productDetailsPage.ts": {
-    "__resolveType": "commerce/loaders/extensions/productDetailsPage.ts"
-  },
-  "Preview /sections/Product/ProductDetails.tsx": {
-    "__resolveType": "site/sections/Product/ProductDetails.tsx"
-  },
-  "analytics": {
-    "__resolveType": "decohub/apps/analytics.ts"
-  },
-  "vtex": {
-    "__resolveType": "decohub/apps/vtex.ts"
-  },
-  "decohub": {
-    "__resolveType": "site/apps/decohub.ts"
+  "pages-home-c4bcbfb771e9": {
+    "name": "Home",
+    "sections": [
+      {
+        "__resolveType": "Banner Grid - 01"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx",
+    "path": "/"
   },
   "site": {
     "__resolveType": "site/apps/site.ts"
@@ -2788,19 +2786,21 @@
   "vnda": {
     "__resolveType": "decohub/apps/vnda.ts"
   },
-  "brand-assistant": {
-    "__resolveType": "decohub/apps/brand-assistant.ts"
+  "vtex-trigger": {
+    "product": [
+      {
+        "__resolveType": "algolia/workflows/index/product.ts"
+      }
+    ],
+    "__resolveType": "vtex/workflows/events.ts"
   },
-  "blog": {
-    "__resolveType": "decohub/apps/blog.ts"
-  },
-  "workflows": {
-    "__resolveType": "decohub/apps/workflows.ts"
+  "vtex": {
+    "__resolveType": "decohub/apps/vtex.ts"
   },
   "weather": {
     "__resolveType": "decohub/apps/weather.ts"
   },
-  "ai-assistants": {
-    "__resolveType": "decohub/apps/ai-assistants.ts"
+  "workflows": {
+    "__resolveType": "decohub/apps/workflows.ts"
   }
 }
