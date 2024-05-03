@@ -36,5 +36,11 @@
   },
   "ai-assistants": {
     "__resolveType": "decohub/apps/ai-assistants.ts"
+  },
+  "pages-Home-206990": {
+    "name": "Home",
+    "path": "/",
+    "sections": [],
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
